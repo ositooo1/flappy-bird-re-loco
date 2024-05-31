@@ -11,8 +11,8 @@ function setup(){
 
 function draw(){
     background(250, 219, 216);
-    if (keyIsDown(65) === true) {
-        birdy.position.y += 10
+    if (keyIsDown(87) === true || (keyIsDown(KEY_DOWN) === true)) {
+        birdy.position.y -= 10
       }
 drawSprites();
 }
